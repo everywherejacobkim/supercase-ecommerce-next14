@@ -5,22 +5,40 @@ import Button from "@mui/material/Button";
 
 interface BasicButtonProps {
   text: string;
-  href: string;
+  href?: string;
+  variant?: "contained" | "outlined" | "text";
+  color?: "primary" | "secondary" | "warning" | "info" | "success" | "error";
 }
 
-const BasicButton: React.FC<BasicButtonProps> = ({ text, href }) => (
+const BasicButton: React.FC<BasicButtonProps> = ({
+  text,
+  href,
+  variant,
+  color,
+}) => (
   <Stack spacing={2} direction="row">
-    <Link href={href} passHref>
-      {" "}
+    {href ? (
+      <Link href={href} passHref>
+        {" "}
+        <Button
+          variant={variant}
+          color={color}
+          size="large"
+          sx={{ padding: "12px 60px" }}
+        >
+          {text}
+        </Button>
+      </Link>
+    ) : (
       <Button
-        variant="contained"
-        color="warning"
+        variant={variant}
+        color={color}
         size="large"
-        sx={{ padding: "12px 60px" }}
+        sx={{ padding: "12px 48px" }}
       >
         {text}
       </Button>
-    </Link>
+    )}
   </Stack>
 );
 

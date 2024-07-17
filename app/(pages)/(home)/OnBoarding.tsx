@@ -78,7 +78,7 @@ const OnBoarding = (props: Props) => {
             </div>
           </div>
           <div className="mt-16">
-            <BasicButton text={"Get Started Today!"} href="/dashboard" />
+            <BasicButton text={"Get Started Today!"} href="/dashboard" variant="contained" color="warning" />
           </div>
         </div>
       </div>
