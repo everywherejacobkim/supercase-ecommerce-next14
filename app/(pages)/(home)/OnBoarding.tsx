@@ -26,16 +26,19 @@ const OnBoarding = (props: Props) => {
             title="Customization"
             desc="Personalize your phone case with your own images, artwork, or text. Our easy-to-use design tool lets you create a case that is truly yours."
             Icon={FaceRetouchingNaturalIcon}
+            className="animate-fade-left animate-ease-linear"
           />
           <IconCard
             title="Quality Materials"
             desc="We use high-quality materials to ensure durability and protection for your phone. Our cases are not only stylish but also designed to safeguard your device from everyday wear and tear."
             Icon={ThumbUpOffAltIcon}
+            className="animate-fade-left animate-ease-linear animate-delay-[1000ms]"
           />
           <IconCard
             title="Customer Satisfaction"
             desc="Your satisfaction is our priority. Our dedicated customer support team is here to assist you every step of the way, from designing your case to answering any questions you may have."
             Icon={SentimentVerySatisfiedIcon}
+            className="animate-fade-left animate-ease-linear animate-delay-[2000ms]"
           />
         </div>
       </div>
@@ -71,14 +74,19 @@ const OnBoarding = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="absolute -left-24 bottom-14">
+            <div className="absolute -left-24 bottom-14 animate-wiggle animate-infinite animate-ease-out">
               <Typography gutterBottom className="font-hand text-[28px]">
                 Customize your style
               </Typography>
             </div>
           </div>
           <div className="mt-16">
-            <BasicButton text={"Get Started Today!"} href="/dashboard" variant="contained" color="warning" />
+            <BasicButton
+              text={"Get Started Today!"}
+              href="/dashboard"
+              variant="contained"
+              color="warning"
+            />
           </div>
         </div>
       </div>

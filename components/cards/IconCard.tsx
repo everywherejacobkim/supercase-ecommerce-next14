@@ -8,10 +8,16 @@ interface IconCardProps {
   title: string;
   desc: string;
   Icon: React.ComponentType<SvgIconProps>;
+  className?: string;
 }
 
-const IconCard: React.FC<IconCardProps> = ({ title, desc, Icon }) => (
-  <Card sx={{ minWidth: 275, borderRadius: 2 }}>
+const IconCard: React.FC<IconCardProps> = ({
+  title,
+  desc,
+  Icon,
+  className,
+}) => (
+  <Card sx={{ minWidth: 275, borderRadius: 2 }} className={className}>
     <CardContent>
       <div className="flex gap-2 items-center">
         <Icon />
@@ -19,7 +25,7 @@ const IconCard: React.FC<IconCardProps> = ({ title, desc, Icon }) => (
           {title}
         </Typography>
       </div>
-      <Typography sx={{ mt: 1, ml: 0.7}} color="text.secondary">
+      <Typography sx={{ mt: 1, ml: 0.7 }} color="text.secondary">
         {desc}
       </Typography>
     </CardContent>
