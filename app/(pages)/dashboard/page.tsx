@@ -81,7 +81,7 @@ export default function Dashboard() {
                   <p className="text-xl font-semibold text-gray-400">
                     Drag and drop or click here to add a file
                   </p>
-                  <p className="text-sm text-gray-400 animate-bounce mt-2">
+                  <p className="text-sm text-gray-400 mt-2 animate-fade-up animate-once">
                     PNG | JPG | JPEG
                   </p>
                 </div>

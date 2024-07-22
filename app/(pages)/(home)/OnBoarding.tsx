@@ -74,7 +74,7 @@ const OnBoarding = (props: Props) => {
                 height={200}
               />
             </div>
-            <div className="absolute -left-24 bottom-14 animate-wiggle animate-infinite animate-ease-out">
+            <div className="absolute -left-24 bottom-14 animate-wiggle animate-delay-[3s] animate-ease-out">
               <Typography gutterBottom className="font-hand text-[28px]">
                 Customize your style
               </Typography>

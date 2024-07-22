@@ -8,3 +8,12 @@
   margin: 0;
   padding: 0;
 }
+
+/* Stepper */
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-completed {
+  color: #ed6c03;
+}
+
+.css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root.Mui-active {
+  color: #ed6c03;
+}
